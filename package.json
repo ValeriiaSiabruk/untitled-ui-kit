@@ -1,0 +1,22 @@
+{
+  "name": "untitled-ui-kit",
+  "version": "1.0.0",
+  "description": "My implementation of Untitled UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeriiaSiabruk/untitled-ui-kit.git"
+  },
+  "author": "Valeriia Siabruk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeriiaSiabruk/untitled-ui-kit/issues"
+  },
+  "homepage": "https://github.com/ValeriiaSiabruk/untitled-ui-kit#readme",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  }
+}
