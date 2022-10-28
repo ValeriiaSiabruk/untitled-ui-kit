@@ -1,3 +1,11 @@
+.showcase-row {
+  padding-left: var(--space-6);
+}
+
 .showcase-row:not(:last-child) {
   margin-bottom: var(--space-6);
+}
+
+.buttons-title {
+  padding-left: var(--space-6);
 }
