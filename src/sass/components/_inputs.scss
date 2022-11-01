@@ -99,3 +99,10 @@
 .input-group > .input-group-field:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
+
+.textarea-field {
+  display: block;
+  width: 20rem;
+  height: var(--space-32);
+  resize: none;
+}
