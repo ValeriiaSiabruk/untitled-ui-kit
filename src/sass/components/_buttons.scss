@@ -1,6 +1,7 @@
 .btn {
   border: 1px solid transparent;
   border-radius: var(--space-2);
+  font-weight: var(--text-medium);
   cursor: pointer;
   transition: border var(--transition), color var(--transition),
     background-color var(--transition), box-shadow var(--transition);
@@ -120,6 +121,7 @@
     border-color: var(--color-primary-25);
     background-color: var(--color-primary-25);
     color: var(--color-primary-300);
+    pointer-events: none;
   }
 
   &.btn-destructive {
@@ -147,21 +149,26 @@
 }
 
 .btn-sm {
+  @extend .text-sm;
   padding: var(--space-2) 0.875rem;
 }
 
 .btn-md {
+  @extend .text-sm;
   padding: 0.625rem var(--space-4);
 }
 
 .btn-lg {
+  @extend .text-md;
   padding: 0.625rem 1.125rem;
 }
 
 .btn-xl {
+  @extend .text-md;
   padding: var(--space-3) var(--space-5);
 }
 
 .btn-2xl {
+  @extend .text-lg;
   padding: var(--space-4) 1.75rem;
 }
