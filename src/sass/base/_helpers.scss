@@ -1,3 +1,18 @@
 .text-gray {
   color: var(--color-gray-500);
 }
+
+.w-100 {
+  width: 100%;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.reset-button {
+  border: none;
+  padding: var(--space-2);
+  background-color: transparent;
+  cursor: pointer;
+}
