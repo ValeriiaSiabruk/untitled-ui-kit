@@ -6,6 +6,10 @@
   &:hover {
     opacity: 0.7;
   }
+
+  a.badge {
+    text-decoration: underline;
+  }
 }
 
 .badge-primary {
