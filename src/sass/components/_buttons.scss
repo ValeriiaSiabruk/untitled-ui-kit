@@ -1,9 +1,14 @@
 .btn {
+  display: inline-flex;
+  align-items: center;
   border: 1px solid transparent;
   border-radius: var(--space-2);
+  font-weight: var(--text-medium);
   cursor: pointer;
   transition: border var(--transition), color var(--transition),
     background-color var(--transition), box-shadow var(--transition);
+  text-align: center;
+  text-decoration: none;
   outline: 0;
 }
 
@@ -63,6 +68,7 @@
 
   &:hover {
     background-color: var(--color-gray-50);
+    color: var(--color-gray-800);
   }
 
   &:focus {
@@ -120,11 +126,12 @@
     border-color: var(--color-primary-25);
     background-color: var(--color-primary-25);
     color: var(--color-primary-300);
+    pointer-events: none;
   }
 
   &.btn-destructive {
-    background-color: var(--color-error-50);
     border-color: var(--color-error-50);
+    background-color: var(--color-error-50);
     color: var(--color-error-700);
 
     &:hover {
@@ -146,22 +153,122 @@
   }
 }
 
+.btn-tertiary-gray {
+  border-color: transparent;
+  background-color: transparent;
+  color: var(--color-gray-500);
+
+  &:hover {
+    border-color: var(--color-gray-50);
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-600);
+  }
+
+  &:disabled,
+  .disabled {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--color-gray-300);
+    pointer-events: none;
+  }
+
+  &.btn-destructive {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--color-error-700);
+
+    &:hover {
+      border-color: var(--color-error-50);
+      background-color: var(--color-error-50);
+      color: var(--color-error-800);
+    }
+
+    &:disabled,
+    &.disabled {
+      border-color: transparent;
+      background-color: transparent;
+      color: var(--color-error-300);
+      pointer-events: none;
+    }
+  }
+}
+
 .btn-sm {
-  padding: var(--space-2) 0.875rem;
+  @extend .text-sm;
+  padding: 0.4375rem 0.8125rem;
 }
 
 .btn-md {
-  padding: 0.625rem var(--space-4);
+  @extend .text-sm;
+  padding: 0.5625rem 0.9375rem;
 }
 
 .btn-lg {
-  padding: 0.625rem 1.125rem;
+  @extend .text-md;
+  padding: 0.5625rem 1.0625rem;
 }
 
 .btn-xl {
-  padding: var(--space-3) var(--space-5);
+  @extend .text-md;
+  padding: 0.6875rem 1.1875rem;
 }
 
 .btn-2xl {
-  padding: var(--space-4) 1.75rem;
+  @extend .text-lg;
+  padding: 0.9375rem 1.6875rem;
+}
+
+.btn .icon:first-child {
+  margin-right: var(--space-2);
+}
+
+.btn .icon:last-child {
+  margin-left: var(--space-2);
+}
+
+.btn-2xl .icon:first-child {
+  margin-right: var(--space-3);
+}
+
+.btn-2xl .icon:last-child {
+  margin-left: var(--space-3);
+}
+
+.btn.btn-icon-only .icon {
+  margin: 0;
+}
+
+.btn-icon-only.btn-sm {
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
+}
+
+.btn-icon-only.btn-md {
+  padding-left: 0.5625rem;
+  padding-right: 0.5625rem;
+}
+
+.btn-icon-only.btn-lg {
+  padding: 0.6875rem;
+}
+
+.btn-icon-only.btn-xl {
+  padding: 0.8125rem;
+}
+
+.btn-icon-only.btn-2xl {
+  padding: 0.9375rem;
+}
+
+.btn:not(.btn-2xl) .icon {
+  width: var(--space-5);
+  height: var(--space-5);
+}
+
+.btn-secondary-gray.btn-icon-only {
+  color: var(--color-gray-400);
+
+  &:hover {
+    color: var(--color-gray-500);
+  }
 }

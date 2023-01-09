@@ -1,3 +1,24 @@
-.showcase-row:not(:last-child) {
+.showcase-row {
+  padding-left: var(--space-6);
+}
+
+.showcase-row {
   margin-bottom: var(--space-6);
+}
+
+.container {
+  @extend .mx-auto;
+  width: 100%;
+  padding-right: var(--space-4);
+  padding-left: var(--space-4);
+
+  @media screen and (min-width: $screen-sm-min) {
+    max-width: 23.4375rem;
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    max-width: 45rem;
+    padding-right: var(--space-8);
+    padding-left: var(--space-8);
+  }
 }

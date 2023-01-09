@@ -1,0 +1,39 @@
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-xs {
+  width: var(--space-6);
+  height: var(--space-6);
+}
+
+.avatar-sm {
+  width: var(--space-8);
+  height: var(--space-8);
+}
+
+.avatar-md {
+  width: var(--space-10);
+  height: var(--space-10);
+}
+
+.avatar-lg {
+  width: var(--space-12);
+  height: var(--space-12);
+}
+
+.avatar-xl {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.avatar-2xl {
+  width: var(--space-16);
+  height: var(--space-16);
+}
