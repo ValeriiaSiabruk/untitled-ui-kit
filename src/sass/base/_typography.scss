@@ -9,11 +9,19 @@ h6 {
 }
 
 h1 {
-  @extend .display-md;
+  font-size: var(--font-size-display-md);
+
+  @media screen and (min-width: $screen-md-min) {
+    font-size: var(--font-size-display-lg);
+  }
 }
 
 h2 {
-  @extend .display-xs;
+  font-size: var(--font-size-display-xs);
+
+  @media screen and (min-width: $screen-md-min) {
+    font-size: var(--font-size-display-xs);
+  }
 }
 
 h3 {
@@ -65,6 +73,12 @@ p {
   letter-spacing: var(--letter-spacing-display);
 }
 
+.display-lg {
+  font-size: var(--font-size-display-lg);
+  line-height: var(--line-height-display-lg);
+  letter-spacing: var(--letter-spacing-display);
+}
+
 .display-xl {
   font-size: var(--font-size-display-xl);
   line-height: var(--line-height-display-xl);
@@ -75,4 +89,48 @@ p {
   font-size: var(--font-size-display-2xl);
   line-height: var(--line-height-display-2xl);
   letter-spacing: var(--letter-spacing-display);
+}
+
+.lg\:display-sm {
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: var(--font-size-display-sm);
+    line-height: var(--line-height-display-sm);
+  }
+}
+
+.lg\:display-md {
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: var(--font-size-display-md);
+    line-height: var(--line-height-display-md);
+    letter-spacing: var(--letter-spacing-display);
+  }
+}
+
+.lg\:display-lg {
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: var(--font-size-display-lg);
+    line-height: var(--line-height-display-lg);
+    letter-spacing: var(--letter-spacing-display);
+  }
+}
+
+.lg\:text-md {
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: var(--font-size-text-md);
+    line-height: var(--line-height-text-md);
+  }
+}
+
+.lg\:text-lg {
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: var(--font-size-text-lg);
+    line-height: var(--line-height-text-lg);
+  }
+}
+
+.lg\:text-xl {
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: var(--font-size-text-xl);
+    line-height: var(--line-height-text-xl);
+  }
 }

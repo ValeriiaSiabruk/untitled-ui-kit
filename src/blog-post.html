@@ -51,7 +51,7 @@
       </div>
     </section>
     <header class="header">
-      <div class="container header-container">
+      <div class="container-xl header-container">
         <a href="#" class="header-logo">
           <img src="./images/logo.svg" width="142" height="32" alt="Logo" />
         </a>
@@ -96,44 +96,64 @@
     </header>
     <main>
       <section>
-        <div class="hero">
+        <div class="hero-blog">
           <div class="hero-text-wrapper">
-            <div class="hero-text">
+            <div class="hero-blog-text">
               <include src="./images/icons/map-pin.svg"></include>
-              <h1 class="hero-title display-md">
+              <h1 class="hero-blog-title display-md lg:display-lg">
                 Roy’s Peak <br /><span>Wanaka, New Zealand</span>
               </h1>
-              <p class="hero-description text-lg">
+              <p class="hero-blog-description text-lg lg:text-xl">
                 New Zealand is famous for its breathtaking hiking trails that
                 wind and weave their way through its beautiful landscapes.
               </p>
-              <div class="mt-auto d-inline-flex align-items-center gap-3">
+
+              <div
+                class="mt-auto d-inline-flex align-items-center gap-3 md-min:d-none"
+              >
                 <img
+                  src="./images/figure-img.jpg"
                   class="avatar avatar-lg"
-                  src="images/figure-img.jpg"
                   alt="avatar"
                 />
                 <div class="avatar-text">
                   <span class="text-md text-medium text-gray-700"
                     >Olivia Rhye</span
                   >
-                  <span class="text-md">
-                    Published in
-                    <a class="text-underline" href="#!">Adventure</a>
-                  </span>
+                  <span class="text-md">olivia@untitledui.com</span>
+                </div>
+              </div>
+
+              <div
+                class="mt-auto d-inline-flex align-items-center gap-4 md-max:d-none"
+              >
+                <img
+                  src="./images/figure-img.jpg"
+                  class="avatar avatar-xl"
+                  alt="avatar"
+                />
+                <div class="avatar-text">
+                  <span class="text-lg text-medium text-gray-700"
+                    >Olivia Rhye</span
+                  >
+                  <span class="text-md">olivia@untitledui.com</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="hero-img-wrapper">
-            <img class="hero-img" src="./images/hero-img.jpg" alt="Mountains" />
+            <img
+              class="hero-blog-img"
+              src="./images/hero-img.jpg"
+              alt="Mountains"
+            />
           </div>
         </div>
       </section>
 
       <section>
-        <article class="container wysiwyg-content">
+        <article class="container-md wysiwyg-content">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
@@ -172,7 +192,7 @@
           </figure>
           <blockquote class="blockquote">
             <!-- prettier-ignore -->
-            <p class="text-xl text-medium text-gray-900 text-italic">In a world older and more complete than ours they move finished and complete, gifted with extensions of the senses we have lost or never attained, living by voices we shall never hear.</p>
+            <p class="text-xl text-medium text-gray-900 text-italic lg:display-sm">In a world older and more complete than ours they move finished and complete, gifted with extensions of the senses we have lost or never attained, living by voices we shall never hear.</p>
             <footer class="blockquote-footer">
               Olivia Rhye, Product Designer
             </footer>
