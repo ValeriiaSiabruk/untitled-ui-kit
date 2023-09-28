@@ -1,4 +1,4 @@
-.hero {
+.hero-blog {
   padding: var(--space-16) var(--space-4) 0;
 
   @media screen and (min-width: $screen-md-min) {
@@ -16,7 +16,7 @@
   }
 }
 
-.hero-img {
+.hero-blog-img {
   object-fit: cover;
 
   @media screen and (min-width: $screen-lg-min) {
@@ -34,14 +34,14 @@
   }
 }
 
-.hero-text {
+.hero-blog-text {
   display: flex;
   flex-direction: column;
   max-width: 34rem;
   height: 100%;
 }
 
-.hero-title {
+.hero-blog-title {
   margin-top: var(--space-4);
   margin-bottom: var(--space-4);
 
@@ -50,17 +50,21 @@
   }
 }
 
-.hero-title span {
+.hero-blog-title span {
   color: var(--color-gray-500);
 }
 
-.hero-description {
+.hero-blog-description {
   margin-bottom: var(--space-8);
 
   @media screen and (min-width: $screen-md-min) {
     font-size: var(--font-size-text-xl);
     line-height: var(--line-height-text-xl);
   }
+}
+
+.wysiwyg-content ~ p {
+  @extend .text-lg;
 }
 
 .wysiwyg-content {
@@ -70,6 +74,10 @@
   @media screen and (min-width: $screen-md-min) {
     padding-top: var(--space-24);
   }
+}
+
+.wysiwyg-content ~ p {
+  @extend .text-lg;
 }
 
 .wysiwyg-content > p:first-child {
@@ -109,4 +117,8 @@
 
 .post-footer h3 {
   margin-bottom: var(--space-6);
+}
+
+.qwe {
+  display: none;
 }
