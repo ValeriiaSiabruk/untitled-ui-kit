@@ -9,11 +9,19 @@ h6 {
 }
 
 h1 {
-  @extend .display-md;
+  font-size: var(--font-size-display-md);
+
+  @media screen and (min-width: $screen-md-min) {
+    font-size: var(--font-size-display-lg);
+  }
 }
 
 h2 {
-  @extend .display-xs;
+  font-size: var(--font-size-display-xs);
+
+  @media screen and (min-width: $screen-md-min) {
+    font-size: var(--font-size-display-xs);
+  }
 }
 
 h3 {
