@@ -117,6 +117,12 @@
   --shadow-focused-primary-500: 0 0 0 4px var(--color-primary-500);
   --shadow-focused-error-100: 0 0 0 4px var(--color-error-100);
 
+  --blur-light-background: rgba(255, 255, 255, 0.6);
+  --blue-sm-light-filter: blur(var(--space-1));
+  --blue-md-light-filter: blur(var(--space-2));
+  --blue-lg-light-filter: blur(var(--space-3));
+  --blue-xl-light-filter: blur(var(--space-5));
+
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
