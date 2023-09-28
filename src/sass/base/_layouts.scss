@@ -48,3 +48,29 @@
     padding-left: var(--space-8);
   }
 }
+
+.section-both {
+  padding-bottom: var(--space-16);
+  padding-top: var(--space-16);
+
+  @media screen and (min-width: $screen-md-min) {
+    padding-bottom: var(--space-24);
+    padding-top: var(--space-24);
+  }
+}
+
+.section-top {
+  padding-top: var(--space-16);
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding-top: var(--space-24);
+  }
+}
+
+.section-bottom {
+  padding-bottom: var(--space-16);
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding-bottom: var(--space-24);
+  }
+}
