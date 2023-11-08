@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/*.html",
-    "homepage": "https://valeriia-styfurak.github.io/untitled-ui-kit/",
-    "scripts": {
-      "start": "parcel src/*.html",
-      "build": "parcel build src/*.html --public-url /untitled-ui-kit/"
-    }
+    "build": "parcel build src/*.html --public-url /untitled-ui-kit/"
   },
   "repository": {
     "type": "git",
