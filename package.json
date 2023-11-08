@@ -4,18 +4,23 @@
   "description": "My implementation of Untitled UI",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/*.html"
+    "start": "parcel src/*.html",
+    "homepage": "https://valeriia-styfurak.github.io/untitled-ui-kit/",
+    "scripts": {
+      "start": "parcel src/*.html",
+      "build": "parcel build src/*.html --public-url /untitled-ui-kit/"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ValeriiaSiabruk/untitled-ui-kit.git"
+    "url": "git+https://github.com/valeriia-styfurak/untitled-ui-kit"
   },
-  "author": "Valeriia Siabruk",
+  "author": "Valeriia Styfurak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ValeriiaSiabruk/untitled-ui-kit/issues"
+    "url": "https://github.com/valeriia-styfurak/untitled-ui-kit/issues"
   },
-  "homepage": "https://github.com/ValeriiaSiabruk/untitled-ui-kit#readme",
+  "homepage": "https://github.com/valeriia-styfurak/untitled-ui-kit#readme",
   "dependencies": {
     "modern-normalize": "^1.1.0"
   },
