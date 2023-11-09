@@ -16,8 +16,8 @@
   "bugs": {
     "url": "https://github.com/valeriia-styfurak/untitled-ui-kit/issues"
   },
-  
   "dependencies": {
+    "file-loader": "^6.2.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
