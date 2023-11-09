@@ -2,6 +2,7 @@
   "name": "untitled-ui-kit",
   "version": "1.0.0",
   "description": "My implementation of Untitled UI",
+  "homepage": "https://valeriia-styfurak.github.io/untitled-ui-kit",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /untitled-ui-kit/"
@@ -15,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/valeriia-styfurak/untitled-ui-kit/issues"
   },
-  "homepage": "https://github.com/valeriia-styfurak/untitled-ui-kit/",
+  
   "dependencies": {
     "modern-normalize": "^1.1.0"
   },
