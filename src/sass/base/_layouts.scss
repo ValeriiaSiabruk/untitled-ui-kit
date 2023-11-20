@@ -1,12 +1,24 @@
 .showcase-row {
+  display: block;
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.showcase-row-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
   padding-left: var(--space-6);
 }
 
-.showcase-row {
-  margin-bottom: var(--space-6);
+.showcase-row-buttons:first-child {
+  margin-top: var(--space-6);
 }
 
-.container-sm {
+.showcase-row .container-sm {
   max-width: 40rem;
   padding-right: var(--space-4);
   padding-left: var(--space-4);
