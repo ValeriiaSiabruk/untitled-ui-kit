@@ -92,11 +92,19 @@
 
 .input-group > .input-group-field:not(:first-child):not(:last-child) {
   border-radius: 0;
+
+  @media screen and (max-width: $screen-sm-max) {
+    width: 8.75rem;
+  }
 }
 
 .textarea-field {
   display: block;
-  width: 20rem;
+  width: 17rem;
   height: var(--space-32);
   resize: none;
+
+  @media screen and (min-width: $screen-md-min) {
+    width: 20rem;
+  }
 }

@@ -216,3 +216,38 @@ p {
     justify-content: space-between;
   }
 }
+
+.swiper-wrapper .swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 0.375rem;
+  left: 0;
+  z-index: 100;
+  box-shadow: 20px -1px 10px 14px #f9fafb;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 0.375rem;
+  right: 0;
+  z-index: 100;
+  box-shadow: -20px 1px 10px 14px #f9fafb;
+  cursor: pointer;
+}
+
+.swiper-slide .swiper-slide-active {
+  width: 300px;
+}
+
+.swiper-container {
+  position: relative;
+}
+.swiper {
+  position: static !important;
+}

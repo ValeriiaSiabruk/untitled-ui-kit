@@ -9,91 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="sass/components.scss" />
+    <script type="module" src="./js/slider.js"></script>
   </head>
+
   <body>
-    <section class="mobile-menu" data-mobile-menu>
-      <header class="mobile-header">
-        <a href="#" class="header-logo-mobile">
-          <img src="./images/logo.svg" width="142" height="32" alt="Logo" />
-        </a>
-        <button
-          class="reset-button"
-          type="button"
-          aria-label="Close menu"
-          data-close-menu-button
-        >
-          <img
-            src="./images/icon-mobile-menu-cross.svg"
-            width="24"
-            height="24"
-            alt="Close menu"
-          />
-        </button>
-      </header>
-      <div class="mobile-nav-container">
-        <nav class="mobile-nav">
-          <ul>
-            <li class="mobile-nav-item"><a href="#">Home</a></li>
-            <li class="mobile-nav-item"><a href="#">Resources</a></li>
-            <li class="mobile-nav-item"><a href="#">Resources</a></li>
-            <li class="mobile-nav-item"><a href="#">Pricing</a></li>
-          </ul>
-        </nav>
-        <ul class="mobile-auth-list">
-          <li class="mobile-auth-item">
-            <a class="btn btn-secondary-gray btn-lg w-100">Log in</a>
-          </li>
-          <li class="mobile-auth-item">
-            <a class="btn btn-primary btn-lg w-100">Sign up</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <header class="header">
-      <div class="container-xl header-container">
-        <a href="#" class="header-logo">
-          <img src="./images/logo.svg" width="142" height="32" alt="Logo" />
-        </a>
-        <button
-          class="header-burger-button reset-button"
-          type="button"
-          aria-label="Open menu"
-          data-open-menu-button
-        >
-          <img
-            src="./images/icon-mobile-menu.svg"
-            width="24"
-            height="24"
-            alt="Open menu"
-          />
-        </button>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li>
-              <a href="#" class="header-nav-link">Home</a>
-            </li>
-            <li>
-              <a href="#" class="header-nav-link">Resources</a>
-            </li>
-            <li>
-              <a href="#" class="header-nav-link">Resources</a>
-            </li>
-            <li>
-              <a href="#" class="header-nav-link">Pricing</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header-auth-list">
-          <li>
-            <a href="#" class="btn btn-tertiary-gray btn-lg">Log in</a>
-          </li>
-          <li>
-            <a href="#" class="btn btn-primary btn-lg">Sign up</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <include src="./partials/mobile-menu.html"></include>
+    <include src="./partials/header.html"></include>
 
     <main>
       <section>
@@ -128,7 +50,9 @@
                   class="display-xs lg:display-sm text-semibold d-flex align-items-center justify-content-space-between"
                 >
                   Alisa Hester
-                  <include src="./images/icons/arrow-up-right.svg"></include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </h2>
 
                 <p class="text-md lg:text-lg text-semibold margin-bottom-0.25">
@@ -141,17 +65,23 @@
                 <ul class="team-card-social d-flex align-items-center gap-5">
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/twitter.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/linkedIn.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#linkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-card-social">
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/dribbble.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#dribble"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -171,7 +101,9 @@
                   class="display-xs lg:display-sm text-semibold d-flex align-items-center justify-content-space-between"
                 >
                   Rich Wilson
-                  <include src="./images/icons/arrow-up-right.svg"></include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </h2>
 
                 <p class="text-md lg:text-lg text-semibold margin-bottom-0.25">
@@ -183,17 +115,23 @@
                 <ul class="team-card-social d-flex gap-5">
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/twitter.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/linkedIn.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#linkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-card-social">
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/dribbble.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#dribble"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -213,7 +151,9 @@
                   class="display-xs lg:display-sm text-semibold d-flex align-items-center justify-content-space-between"
                 >
                   Annie Stanley
-                  <include src="./images/icons/arrow-up-right.svg"></include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </h2>
 
                 <p class="text-md lg:text-lg text-semibold margin-bottom-0.25">
@@ -225,17 +165,23 @@
                 <ul class="team-card-social d-flex gap-5">
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/twitter.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/linkedIn.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#linkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-card-social">
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/dribbble.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#dribble"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -255,7 +201,9 @@
                   class="display-xs lg:display-sm text-semibold d-flex align-items-center justify-content-space-between"
                 >
                   Johnny Bell
-                  <include src="./images/icons/arrow-up-right.svg"></include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </h2>
 
                 <p class="text-md lg:text-lg text-semibold margin-bottom-0.25">
@@ -267,17 +215,23 @@
                 <ul class="team-card-social d-flex gap-5">
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/twitter.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/linkedIn.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#linkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-card-social">
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/dribbble.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#dribble"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -297,7 +251,9 @@
                   class="display-xs lg:display-sm text-semibold d-flex align-items-center justify-content-space-between"
                 >
                   Mia Ward
-                  <include src="./images/icons/arrow-up-right.svg"></include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </h2>
 
                 <p class="text-md lg:text-lg text-semibold margin-bottom-0.25">
@@ -309,17 +265,23 @@
                 <ul class="team-card-social d-flex gap-5">
                   <li>
                     <a href="#" class="d-flex">
-                      <include src="./images/icons/twitter.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/linkedIn.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#linkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-card-social">
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/dribbble.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#dribble"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -338,7 +300,9 @@
                   class="display-xs lg:display-sm text-semibold d-flex align-items-center justify-content-space-between"
                 >
                   Archie Young
-                  <include src="./images/icons/arrow-up-right.svg"></include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </h2>
 
                 <p class="text-md lg:text-lg text-semibold margin-bottom-0.25">
@@ -350,17 +314,23 @@
                 <ul class="team-card-social d-flex gap-5">
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/twitter.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/linkedIn.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#linkedIn"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-card-social">
                     <a href="#!" class="d-flex">
-                      <include src="./images/icons/dribbble.svg"></include>
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#dribble"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -440,7 +410,9 @@
                   class="align-items-center gap-2 text-sm text-medium text-primary-600"
                 >
                   View job
-                  <include src="./images/icons/arrow-up-right.svg"> </include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </a>
               </div>
               <h5 class="text-lg mb-4">
@@ -449,27 +421,26 @@
                   href="#!"
                   class="badge badge-blue badge-sm text-xs text-medium d-inline-flex align-items-center gap-0\.375"
                 >
-                  <include src="./images/icons/dot.svg"></include>Design</a
-                >
+                  <svg class="icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#dot"></use>
+                  </svg>
+                  Design
+                </a>
               </h5>
               <p class="mb-4">
                 We’re looking for a mid-level product designer to join our team.
               </p>
               <div class="d-flex gap-5">
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/map-pin.svg"
-                    alt="Map pin"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#map-pin"></use>
+                  </svg>
                   <span class="text-medium">Remote</span>
                 </p>
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/clock.svg"
-                    alt="Clock"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#clock"></use>
+                  </svg>
                   <span class="text-medium">Full-time</span>
                 </p>
               </div>
@@ -484,7 +455,9 @@
                   class="align-items-center gap-2 text-sm text-medium text-primary-600"
                 >
                   View job
-                  <include src="./images/icons/arrow-up-right.svg"> </include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </a>
               </div>
 
@@ -494,27 +467,26 @@
                   href="#!"
                   class="badge badge-blue badge-sm text-xs text-medium d-inline-flex align-items-center gap-0\.375"
                 >
-                  <include src="./images/icons/dot.svg"></include>Design</a
-                >
+                  <svg class="icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#dot"></use>
+                  </svg>
+                  Design
+                </a>
               </h5>
               <p class="mb-4">
                 We’re looking for a mid-level product designer to join our team.
               </p>
               <div class="d-flex gap-5">
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/map-pin.svg"
-                    alt="Map pin"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#map-pin"></use>
+                  </svg>
                   <span class="text-medium">Remote</span>
                 </p>
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/clock.svg"
-                    alt="Clock"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#clock"></use>
+                  </svg>
                   <span class="text-medium">Full-time</span>
                 </p>
               </div>
@@ -527,7 +499,9 @@
                   class="align-items-center gap-2 text-sm text-medium text-primary-600"
                 >
                   View job
-                  <include src="./images/icons/arrow-up-right.svg"> </include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </a>
               </div>
               <h5 class="text-lg mb-4">
@@ -536,27 +510,26 @@
                   href="#!"
                   class="badge badge-blue badge-sm text-xs text-medium d-inline-flex align-items-center gap-0\.375"
                 >
-                  <include src="./images/icons/dot.svg"></include>Design</a
-                >
+                  <svg class="icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#dot"></use>
+                  </svg>
+                  Design
+                </a>
               </h5>
               <p class="mb-4">
                 We’re looking for a mid-level product designer to join our team.
               </p>
               <div class="d-flex gap-5">
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/map-pin.svg"
-                    alt="Map pin"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#map-pin"></use>
+                  </svg>
                   <span class="text-medium">Remote</span>
                 </p>
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/clock.svg"
-                    alt="Clock"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#clock"></use>
+                  </svg>
                   <span class="text-medium">Full-time</span>
                 </p>
               </div>
@@ -569,7 +542,9 @@
                   class="align-items-center gap-2 text-sm text-medium text-primary-600"
                 >
                   View job
-                  <include src="./images/icons/arrow-up-right.svg"> </include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </a>
               </div>
               <h5 class="text-lg mb-4">
@@ -578,27 +553,26 @@
                   href="#!"
                   class="badge badge-blue badge-sm text-xs text-medium d-inline-flex align-items-center gap-0\.375"
                 >
-                  <include src="./images/icons/dot.svg"></include>Design</a
-                >
+                  <svg class="icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#dot"></use>
+                  </svg>
+                  Design
+                </a>
               </h5>
               <p class="mb-4">
                 We’re looking for a mid-level product designer to join our team.
               </p>
               <div class="d-flex gap-5">
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/map-pin.svg"
-                    alt="Map pin"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#map-pin"></use>
+                  </svg>
                   <span class="text-medium">Remote</span>
                 </p>
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/clock.svg"
-                    alt="Clock"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#clock"></use>
+                  </svg>
                   <span class="text-medium">Full-time</span>
                 </p>
               </div>
@@ -611,7 +585,9 @@
                   class="align-items-center gap-2 text-sm text-medium text-primary-600"
                 >
                   View job
-                  <include src="./images/icons/arrow-up-right.svg"> </include>
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#arrow-up-right"></use>
+                  </svg>
                 </a>
               </div>
               <h5 class="text-lg mb-4">
@@ -620,27 +596,26 @@
                   href="#!"
                   class="badge badge-blue badge-sm text-xs text-medium d-inline-flex align-items-center gap-0\.375"
                 >
-                  <include src="./images/icons/dot.svg"></include>Design</a
-                >
+                  <svg class="icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#dot"></use>
+                  </svg>
+                  Design
+                </a>
               </h5>
               <p class="mb-4">
                 We’re looking for a mid-level product designer to join our team.
               </p>
               <div class="d-flex gap-5">
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/map-pin.svg"
-                    alt="Map pin"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#map-pin"></use>
+                  </svg>
                   <span class="text-medium">Remote</span>
                 </p>
                 <p class="d-flex align-items-center gap-2">
-                  <img
-                    src="./images/icons/clock.svg"
-                    alt="Clock"
-                    class="icon-md"
-                  />
+                  <svg class="icon icon-md" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#clock"></use>
+                  </svg>
                   <span class="text-medium">Full-time</span>
                 </p>
               </div>
@@ -703,25 +678,82 @@
               <span class="text-md">UX Designer</span>
             </div>
           </div>
-          <div
-            class="d-flex align-items-center justify-content-space-between md-min:d-none"
-          >
-            <include src="./images/icons/arrow-left-default.svg"></include>
-            <include
-              src="./images/icons/company-logo-circooles-mobile.svg"
-            ></include>
-            <include src="./images/icons/arrow-right-default.svg"></include>
+
+          <div class="swiper-container md-min:d-none">
+            <div
+              class="swiper d-flex align-items-center justify-content-space-between"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <svg class="icon" width="142" height="40">
+                    <use
+                      href="./images/symbol-defs.svg#company-logo-layers"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg class="icon" width="142" height="40">
+                    <use
+                      href="./images/symbol-defs.svg#company-logo-sisyphus"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg class="icon" width="160" height="40">
+                    <use
+                      href="./images/symbol-defs.svg#company-logo-circooles"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg class="icon" width="142" height="40">
+                    <use
+                      href="./images/symbol-defs.svg#company-logo-catalog"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg class="icon" width="142" height="40">
+                    <use
+                      href="./images/symbol-defs.svg#company-logo-quotient"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev">
+                <svg class="icon" width="40" height="20">
+                  <use href="./images/symbol-defs.svg#arrow-left-default"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="icon" width="40" height="20">
+                  <use
+                    href="./images/symbol-defs.svg#arrow-right-default"
+                  ></use>
+                </svg>
+              </div>
+            </div>
           </div>
+
           <div
             class="d-flex justify-content-center align-items-center gap-16 md-max:d-none"
           >
-            <include src="./images/icons/company-logo-layers.svg"></include
-            ><include src="./images/icons/company-logo-sisyphus.svg"></include
-            ><include
-              src="./images/icons/company-logo-circooles-desktop.svg"
-            ></include
-            ><include src="./images/icons/company-logo-catalog.svg"></include
-            ><include src="./images/icons/company-logo-quotient.svg"></include>
+            <svg class="icon" width="152.5" height="40">
+              <use href="./images/symbol-defs.svg#company-logo-layers"></use>
+            </svg>
+            <svg class="icon" width="152.5" height="40">
+              <use href="./images/symbol-defs.svg#company-logo-sisyphus"></use>
+            </svg>
+            <svg class="icon" width="152.5" height="40">
+              <use href="./images/symbol-defs.svg#company-logo-circooles"></use>
+            </svg>
+            <svg class="icon" width="152.5" height="40">
+              <use href="./images/symbol-defs.svg#company-logo-catalog"></use>
+            </svg>
+            <svg class="icon" width="152.5" height="40">
+              <use href="./images/symbol-defs.svg#company-logo-quotient"></use>
+            </svg>
           </div>
         </div>
       </section>
@@ -732,12 +764,16 @@
             <div class="team-footer-app mt-12">
               <h6 class="mb-4 text-white text-sm text-semibold">Get the app</h6>
               <div class="d-flex gap-4">
-                <include
-                  src="./images/icons/google-play-white-outline.svg"
-                ></include
-                ><include
-                  src="./images/icons/app-store-white-outline.svg"
-                ></include>
+                <svg class="icon" width="120" height="40">
+                  <use
+                    href="./images/symbol-defs.svg#google-play-white-outline"
+                  ></use>
+                </svg>
+                <svg class="icon" width="120" height="40">
+                  <use
+                    href="./images/symbol-defs.svg#app-store-white-outline"
+                  ></use>
+                </svg>
               </div>
             </div>
             <ul class="team-footer-one-list">
@@ -807,7 +843,7 @@
           </div>
 
           <div class="footer-bottom">
-            <a href="#!" class="header-logo">
+            <a class="header-logo" href="components.html">
               <img
                 src="./images/logo-white.svg"
                 width="142"
