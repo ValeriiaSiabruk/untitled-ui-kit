@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("[data-open-menu-button]"),t=document.querySelector("[data-close-menu-button]"),o=document.querySelector("[data-mobile-menu]"),d=document.querySelector("body");e.addEventListener("click",(()=>{o.classList.add("is-open"),d.classList.add("overflow-hidden")})),t.addEventListener("click",(()=>{o.classList.remove("is-open"),d.classList.remove("overflow-hidden")}))})();
+//# sourceMappingURL=team-page.555a247c.js.map
