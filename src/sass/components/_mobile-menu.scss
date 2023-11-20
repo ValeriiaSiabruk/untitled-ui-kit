@@ -55,6 +55,10 @@
   }
 }
 
+.mobile-nav-item a {
+  display: block;
+}
+
 .mobile-nav-item:not(:last-child) {
   margin-bottom: var(--space-2);
   line-height: var(--space-6);
