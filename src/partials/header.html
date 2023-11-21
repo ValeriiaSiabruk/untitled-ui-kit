@@ -19,13 +19,25 @@
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li>
-          <a class="header-nav-link" href="components.html">Components</a>
+          <a
+            class="header-nav-link  {{ current === 'components' ? 'current' : '' }} "
+            href="components.html"
+            >Components</a
+          >
         </li>
         <li>
-          <a class="header-nav-link" href="index.html">Blog</a>
+          <a
+            class="header-nav-link {{ current === 'index' ? 'current' : '' }}"
+            href="index.html"
+            >Blog</a
+          >
         </li>
         <li>
-          <a class="header-nav-link" href="team-page.html">Team</a>
+          <a
+            class="header-nav-link {{ current === 'team' ? 'current' : '' }}"
+            href="team-page.html"
+            >Team</a
+          >
         </li>
       </ul>
     </nav>
