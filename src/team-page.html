@@ -15,8 +15,10 @@
 
   <body>
     <include src="./partials/mobile-menu.html"></include>
-    <include src="./partials/header.html"></include>
-
+    <include
+      src="./partials/header.html"
+      locals='{ "current": "team" }'
+    ></include>
     <main>
       <section>
         <div class="container-xl">

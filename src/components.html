@@ -14,7 +14,10 @@
   <body>
     <main>
       <include src="./partials/mobile-menu.html"></include>
-      <include src="./partials/header.html"></include>
+      <include
+        src="./partials/header.html"
+        locals='{ "current": "components" }'
+      ></include>
       <include src="./partials/buttons.html"></include>
       <include src="./partials/inputs.html"></include>
       <include src="./partials/select.html"></include>
